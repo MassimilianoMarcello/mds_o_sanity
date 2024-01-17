@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Dropdown from "./Dropdown";
 import dropdownItems from "./DropItems";
+// import "./NavBar.css";
 import Button from "./Button";
 import barsSolid from "@/public/assets/bars-solid.svg";
 import xmarkSolid from "@/public/assets/xmark-solid.svg";
