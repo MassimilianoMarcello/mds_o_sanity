@@ -10,11 +10,7 @@ const theme = {
     blue: "#1b61d9",
     white: "fefffe",
   },
-  fontSize: {
-    small: ".5rem",
-    medium: "1rem",
-    large: "2rem",
-  },
+
   layout: {
     containerWidth: '60rem',
     containerPadding: '2rem',

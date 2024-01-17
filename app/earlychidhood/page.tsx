@@ -1,6 +1,7 @@
 import { getEarlyChildhood } from '@/sanity/sanity.query';
 import Image from 'next/image';
 
+
  export default async function Early() {
      const earlys = await getEarlyChildhood();
   
@@ -10,7 +11,7 @@ import Image from 'next/image';
          <div className="container">
             {earlys.map((early) => (
          <div  key={early._id}  >
-           <div className='staff-card'>
+           <div className='images-card'>
            {early.heroImage && (
            
            <Image
@@ -33,8 +34,11 @@ import Image from 'next/image';
               priority
             />
           )}
-          <p className="staff-name">{early.title}</p>
-          <p className="staff-role">{early.infoParagraph}</p>
+          <div className="text-container">
+          <p className="title-card">{early.title}</p>
+          <p className="text-card">{early.infoParagraph}</p>
+          </div>
+      
    
            </div>
               </div>
