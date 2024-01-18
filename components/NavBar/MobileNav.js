@@ -124,14 +124,14 @@ const NavFixed = styled.ul`
   
 `;
 const NavMenu = styled.ul`
- font-family: var(--euclid-flex);
+ /* font-family: var(--euclid-flex); */
   .nav-links-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   .nav-links {
-    font-family: var(--euclid-flex);
+    /* font-family: var(--euclid-flex); */
     list-style-type: none;
     padding: 2rem;
     margin-top: -4rem;

@@ -1,13 +1,13 @@
 
 .dropdown{
- font-family: var(--euclid-flex);
+ /* font-family: var(--euclid-flex); */
     height: 100%;
     /* width: 355px; */
 
     top: 80px;
 
     list-style: none;
-    text-align: left;
+    text-align: center;
     margin-left: -4rem;
 }
 .dropdown li  {
