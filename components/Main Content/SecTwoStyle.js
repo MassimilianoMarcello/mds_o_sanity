@@ -9,30 +9,44 @@ export const Container = styled.section`
   align-items: center;
   position: relative;
   padding: 0.3rem;
-  @media only screen and (min-width: 1000px) {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: repeat(2, auto);
-    .image-container-1{
-        grid-column: 2/4;
+  .image-container{
+        grid-column: 1/3;
+        grid-row:1/2;
  
     }
-    .text-container-1{
-        grid-column: 1/2;
+    .text-container{
+        grid-column: 1/3;
+        grid-row:3/4;
+  
+    }
+  @media only screen and (min-width: 600px) {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    .image-container{
+        grid-column: 1/4;
+        grid-row:1/5;
+ 
+    }
+    .text-container{
+        grid-column: 3/5;
+        grid-row:1/5;
+  
     }
   }
 
 `;
 
 export const ImageContainer = styled.div`
-  grid-column: 1/2;
-  grid-row: 1/2;
+  /* grid-column: 1/2;
+  grid-row: 1/2; */
   .images {
     z-index: 2;
   }
   .rectangle-0 {
     grid-column: 1/3;
     grid-row: 1/2;
-    background-color: var(--color-blue);
+    background-color:blue;
     height: 30%;
     width: 40%;
     position: absolute;
@@ -43,7 +57,7 @@ export const ImageContainer = styled.div`
   .rectangle-1 {
     grid-column: 1/4;
     grid-row: 1/2;
-    background-color: var(--color-gold);
+    background-color: gold;
     height: 50%;
     width: 20%;
     right: 0;
@@ -51,8 +65,8 @@ margin-right: -1rem;
    
   }
   @media only screen and (min-width: 1000px) {
-    grid-column: 1/3;
-  grid-row: 1/2;
+    /* grid-column: 1/3;
+  grid-row: 1/2; */
   }
   .rectangle-1 {
     height: 40%;
@@ -69,8 +83,8 @@ margin-bottom: -0.5rem;
 `;
 
 export const TextContainer = styled.div`
-  grid-column: 1/2;
-  grid-row: 3/4;
+  /* grid-column: 1/2;
+  grid-row: 3/4; */
   margin-bottom: 0.5rem;
   h1 {
     border-top: solid 3px #f5a700;
@@ -100,11 +114,11 @@ export const TextContainer = styled.div`
     color: #0741a4;
   }
   @media only screen and (min-width: 1000px) {
-    grid-column: 3/4;
-  grid-row: 1/2;
+    /* grid-column: 3/4;
+  grid-row: 1/2; */
 }
 `;
 
 export const GoldenTitle = styled.span`
-  color: var(--color-gold-text);
+  color: gold;
 `;
