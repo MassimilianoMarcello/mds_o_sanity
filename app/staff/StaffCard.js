@@ -4,50 +4,70 @@ import React from 'react';
 import Image from 'next/image';
 import styled from 'styled-components';
 
-const StaffCard = ({ staff }) => (
+const StaffCard = ({ staff }) => (<>
+  <CardContainer>
   <MainContainer key={staff._id} className='card-container'>
-    <div className='images-container'>
+    <ImageContainer className='images-container'>
       <div className='hero-image'>
         {staff.idPhoto && (
           <Image
+          className='image'
             src={staff.idPhoto}
             alt={staff.role}
-            width={300}
-            height={400}
-            layout='responsive'
+            width={220}
+            height={220}
+      
             priority
           />
         )}
       </div>
 
-    </div>
-    <div className="text-container">
+    </ImageContainer>
+    <TextContainer className="text-container">
           <p className="title-card">{staff.name}</p>
           <p className="text-card">{staff.role}</p>
-        </div>
+        </TextContainer>
   </MainContainer>
+  </CardContainer>
+  </>
 );
 
 export default StaffCard;
+const CardContainer = styled.div`
+/* display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;  */
+  display: inline-block;
+  margin: 2rem auto;
+
+
+`
 
 const MainContainer = styled.section`
-/* display: grid;
-grid-template-columns: repeat(4,1fr);
-grid-template-rows: auto auto auto; */
+  margin-right:.5rem;
+  display: flex;
+flex-direction: column;
 
-/* .images-container{
-grid-column: 1/3;
-grid-row: 1/3;
-background-color:blu;
 
+  
+`
+
+const ImageContainer = styled.div`
+.image{
+  min-width: 220px;
+  min-height: 220px;
+  padding: .4rem;
 }
-.text-container{
-  grid-column: 3/5;
-  grid-row: 1/3;
-  background-color:red;
-}
-.hero-image{
-  background-color:violet;
-} */
+`
 
+
+const TextContainer = styled.div`
+width: 220px;
+text-align: center;
+.title-card{
+  font-size:.9rem;
+}
+.text-card{
+  font-size: .8rem;
+}
 `
