@@ -95,7 +95,7 @@ const NavMobile = styled.nav`
   .menu-icon {
     position: fixed;
     right: 0;
-    margin: 1rem 3.5rem;
+    margin: 1.5rem 1.5rem;
     font-size: 3rem;
     top: 0;
     list-style-type: none;
@@ -112,7 +112,7 @@ const NavFixed = styled.ul`
   width: 100%;
   background-color: #fff;
   z-index: 1000;
-  height: 60px;
+  height: 80px;
   padding-top: 30px;
   margin-top: 0rem;
   .nav-logo-mobile {

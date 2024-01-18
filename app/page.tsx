@@ -1,4 +1,4 @@
-// "use client";
+"use client";
 // import Image from "next/legacy/image";
 import { ThemeProvider } from "styled-components";
 import theme from "../app/Theme";
