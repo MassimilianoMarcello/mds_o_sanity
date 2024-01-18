@@ -3,7 +3,7 @@
   margin: 0 auto;
   width: 100%;
   overflow: hidden;
-}
+} 
 
 
 
@@ -22,7 +22,7 @@
   border-top: 4.5rem  solid hsl(30, 3%, 11%);
   border-bottom: 4.5rem  solid hsl(30, 3%, 11%);
   
-}
+} 
 .title-text span {
   background: #e88e06;
   -webkit-text-fill-color: white;

@@ -74,6 +74,11 @@ const theme = {
     euclidFlex:
       'Euclid Flex, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji"',
   },
+  fontWeight: {
+    light:200,
+    regular: 400,
+    bold: 700,
+  },
 };
 
 export default theme;
