@@ -3,7 +3,7 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyles = createGlobalStyle`
 
 
-  body {
+  html{
 
 /*
   1. Use a more-intuitive box-sizing model.

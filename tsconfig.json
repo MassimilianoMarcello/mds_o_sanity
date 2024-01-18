@@ -28,6 +28,6 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/tetering/EarlyCard.js"
-, "app/tetering/serve.js", "app/staff/serves.js"  ],
+, "app/tetering/serve.js", "app/staff/serves.js", "app/Theme.js"  ],
   "exclude": ["node_modules"]
 }

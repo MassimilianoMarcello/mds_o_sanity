@@ -1,9 +1,11 @@
 import "../../samplePages.css";
 import Early from '@/app/tetering/serve';
 
+
 export default function EarlyChildhood() {
   return (
     <>
+   
       <div className=" bg-container">
         <div className="kindergarten">
           <h1 className="text-sample">early childhood </h1>
@@ -11,6 +13,7 @@ export default function EarlyChildhood() {
         <p>Known for its warm and nurturing environment, the MDS Early Childhood Department is a welcoming place for our youngest learners - toddlers through kindergartners - as they begin their educational journeys.</p>
         <Early />
       </div>
+      
     </>
   );
 }
