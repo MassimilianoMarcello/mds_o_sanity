@@ -16,12 +16,10 @@ const NavBar = () => {
   const handleClick = () => {
     setClick(!click);
     setOpenDropdown(null); 
-  
-   
-
   };
 
-DropdownEnter = (dropdownName) => {
+
+  const handleDropdownEnter = (dropdownName) => {
     setOpenDropdown(dropdownName);
   };
 
