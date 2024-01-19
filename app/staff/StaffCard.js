@@ -14,8 +14,8 @@ const StaffCard = ({ staff }) => (<>
           className='image'
             src={staff.idPhoto}
             alt={staff.role}
-            width={220}
-            height={220}
+            width={240}
+            height={200}
       
             priority
           />
@@ -38,7 +38,7 @@ const CardContainer = styled.div`
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   gap: 20px;  */
   display: inline-block;
-  margin: 2rem auto;
+  margin-left: 0rem ;
 
 
 `
@@ -54,9 +54,8 @@ flex-direction: column;
 
 const ImageContainer = styled.div`
 .image{
-  min-width: 220px;
-  min-height: 220px;
-  padding: .4rem;
+
+  padding: 1rem;
 }
 `
 
@@ -65,9 +64,16 @@ const TextContainer = styled.div`
 width: 220px;
 text-align: center;
 .title-card{
-  font-size:.9rem;
+  font-size:1rem;
+  color:#0741a4;
+  font-weight:500;
+  margin-top: -.5rem;
 }
 .text-card{
   font-size: .8rem;
+  color: #333333;
+  margin-top: -1rem;
+  font-size:.9rem;
+  font-weight:300;
 }
 `

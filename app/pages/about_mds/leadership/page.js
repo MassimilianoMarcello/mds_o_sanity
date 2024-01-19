@@ -123,5 +123,6 @@ font-weight:500;
 color: #0741a4;
 border-top: solid 2px #f5a800;
 margin:2rem;
+padding-top:1rem;
 
 `
