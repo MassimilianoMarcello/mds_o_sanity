@@ -60,16 +60,12 @@ position: relative;
 .text-container{
   grid-column: 1/5;
   grid-row: 2/4;
-  background-color:red;
+ 
   display: flex;
   flex-direction: column;
 justify-content: center;
 }
-.hero-image{
-  background-color:violet;
 
-
-}
 .h-img{
   z-index: -9000;
 }
@@ -84,22 +80,20 @@ justify-content: center;
   .images-container{
 grid-column: 1/4;
 grid-row: 1/3;
-background-color:blu;
+
 padding: 2rem;
 
 }
 .text-container{
   grid-column: 4/5;
   grid-row: 1/3;
-  background-color:red;
+
   display: flex;
   flex-direction: column;
 justify-content: center;
 margin-top: -10rem;
 }
-.hero-image{
-  background-color:violet;
-}
+
 .h-img{
   z-index: -900000;
 }
