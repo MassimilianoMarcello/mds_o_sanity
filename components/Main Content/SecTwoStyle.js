@@ -9,39 +9,40 @@ export const Container = styled.section`
   align-items: center;
   position: relative;
   padding: 0.3rem;
-  .image-container{
-        grid-column: 1/3;
-        grid-row:1/2;
- 
-    }
-    .text-container{
-        grid-column: 1/3;
-        grid-row:3/4;
-  
-    }
-  @media only screen and (min-width: 600px) {
+  .image-container-1{
+    grid-column: 1/2;
+  grid-row: 1/2;
+
+  }
+  .text-container-1{
+    grid-column: 1/2;
+  grid-row: 2/2;
+  }
+
+  @media only screen and (min-width: 800px) {
     display:grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(4, auto);
-    .image-container{
-        grid-column: 1/4;
-        grid-row:1/5;
- 
-    }
-    .text-container{
-        grid-column: 3/5;
-        grid-row:1/5;
-  
-    }
+    .image-container-1{
+      grid-column: 2/5;
+  grid-row: 1/2;
+  padding-left:7rem;
+  }
+  .text-container-1{
+    grid-column: 1/2;
+  grid-row: 1/2;
+  }
+
   }
 
 `;
 
 export const ImageContainer = styled.div`
-  /* grid-column: 1/2;
-  grid-row: 1/2; */
+  grid-column: 1/2;
+  grid-row: 1/2;
   .images {
     z-index: 2;
+  
   }
   .rectangle-0 {
     grid-column: 1/3;
@@ -64,9 +65,13 @@ export const ImageContainer = styled.div`
 margin-right: -1rem;
    
   }
-  @media only screen and (min-width: 1000px) {
-    /* grid-column: 1/3;
-  grid-row: 1/2; */
+  @media only screen and (min-width: 800px) {
+    grid-column: 1/4;
+  grid-row: 1/5;
+  .images {
+   
+    /* padding-left:7rem; */
+  }
   }
   .rectangle-1 {
     height: 40%;
@@ -83,9 +88,10 @@ margin-bottom: -0.5rem;
 `;
 
 export const TextContainer = styled.div`
-  /* grid-column: 1/2;
-  grid-row: 3/4; */
+  grid-column: 1/2;
+  grid-row: 3/4;
   margin-bottom: 0.5rem;
+
   h1 {
     border-top: solid 3px #f5a700;
     padding-top: 1.25rem;
@@ -113,9 +119,9 @@ export const TextContainer = styled.div`
   &:hover {
     color: #0741a4;
   }
-  @media only screen and (min-width: 1000px) {
-    /* grid-column: 3/4;
-  grid-row: 1/2; */
+  @media only screen and (min-width: 600px) {
+    grid-column: 4/5;
+  grid-row: 1/2;
 }
 `;
 
