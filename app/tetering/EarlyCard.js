@@ -48,11 +48,13 @@ display: grid;
 grid-template-columns: repeat(4,1fr);
 grid-template-rows: auto auto auto;
 
+
 .images-container{
 grid-column: 1/5;
 grid-row: 1/3;
 background-color:blu;
 padding: .1rem;
+position: relative;
 
 }
 .text-container{
@@ -65,6 +67,18 @@ justify-content: center;
 }
 .hero-image{
   background-color:violet;
+
+
+}
+.h-img{
+  z-index: -9000;
+}
+.decoration-image{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -10;
+  margin-left:-1rem;
 }
 @media only screen and (min-width: 1000px) {
   .images-container{
@@ -81,10 +95,13 @@ padding: 2rem;
   display: flex;
   flex-direction: column;
 justify-content: center;
-margin-top: -25rem;
+margin-top: -10rem;
 }
 .hero-image{
   background-color:violet;
+}
+.h-img{
+  z-index: -900000;
 }
 }
 `
@@ -101,5 +118,7 @@ const TextContainer = styled.div`
     font-weight: 400;
     line-height: 1.2;
     letter-spacing: 1px;}
-.text-card{}
+.text-card{
+  
+}
 `
