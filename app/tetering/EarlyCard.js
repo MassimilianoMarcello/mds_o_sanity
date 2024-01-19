@@ -119,6 +119,8 @@ const TextContainer = styled.div`
     line-height: 1.2;
     letter-spacing: 1px;}
 .text-card{
-  
+  font-size:1.2rem;
+font-weight:300;
+color: #28231d;
 }
 `
