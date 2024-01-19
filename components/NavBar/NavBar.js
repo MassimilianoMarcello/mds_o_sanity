@@ -10,16 +10,18 @@ import barsSolid from '../../public/assets/bars-solid.svg';
 import xmarkSolid from '../../public/assets/xmark-solid.svg'; 
 
 const NavBar = () => {
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState(true);
   const [openDropdown, setOpenDropdown] = useState(null);
 
   const handleClick = () => {
     setClick(!click);
     setOpenDropdown(null); 
+  
+   
+
   };
 
-
-  const handleDropdownEnter = (dropdownName) => {
+DropdownEnter = (dropdownName) => {
     setOpenDropdown(dropdownName);
   };
 
