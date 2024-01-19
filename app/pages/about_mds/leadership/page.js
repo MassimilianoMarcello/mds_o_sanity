@@ -48,7 +48,7 @@ Dr. Pesha Kletenik joins the MDS community with a great deal of enthusiasm and t
 Dr. Kletenik received her Doctorate in Education from the Learning and Teaching Program at Hofstra University, with a specialization in Human Development and Educational Psychology and a Master’s of Science in School Psychology from the Touro Graduate School of Education and Psychology. Dr. Kletenik has been an Avi Chai Fellow and a scholar in residence for the Orthodox Union Women’s Initiative as well as a guest lecturer at Hofstra University's Graduate School of Education. She has participated in numerous professional development initiatives, including attending the Principals’ Center at Harvard University Graduate School of Education. She is currently a student in the Emil Fish Center for Holocaust and Genocide Studies at Yeshiva University. Dr. Kletenik has written about parenting and Jewish education in the Lookstein Jewish Educational Leadership Journal and the Panim Journal. She lives in West Hempstead with her husband and three children.
 </Bio>
       </MainContainer>
-      <h2>Educational leadership</h2>
+      <Title>Educational leadership</Title>
 <StaffCard/>
     </>
   );
@@ -68,7 +68,8 @@ const ImageContainer = styled.div`
 .main-image img{
   border-radius: 50%;
   object-fit: cover;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
+  padding-bottom:1rem;
 
 }
 .decoration-image img{
@@ -83,15 +84,20 @@ const ImageContainer = styled.div`
 const TextContainer = styled.div`
   grid-column:3/5;
   grid-row:1/2;
-  padding-left:1rem;
-  padding-top:6rem;
-  margin-left:5rem;
+  padding-left:.1rem;
+  margin-top: -8rem;
+  padding-top:8rem;
+  padding-bottom: 5rem;
+  margin-left:-1rem;
 height: 6rem;
-width: 9rem;
-  border-bottom: solid 2px gold;
+width: 16rem;
+  border-bottom: solid 2px #f5a800;
  
 .text-name{
-font-size: 1rem;
+font-size: 2rem;
+font-weight:500;
+
+color: #0741a4;
 text-align: left;
 margin-left: -1rem;
 }
@@ -102,6 +108,20 @@ margin-left: -1rem;
 }
 `
 const Bio = styled.p`
+
   grid-column:1/5;
   grid-row:3/4;
+  color: #333333;
+  margin: 1.8rem 1.8rem;
+  font-size:.9rem;
+  font-weight:300;
+`
+
+const Title = styled.h1`
+font-size:1.5rem;
+font-weight:500;
+color: #0741a4;
+border-top: solid 2px #f5a800;
+margin:2rem;
+
 `
