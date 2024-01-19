@@ -8,7 +8,7 @@ module.exports = {
       {
         protocol: 'https',
         hostname: 'cdn.sanity.io',
-        domains: [ 'cdn.sanity.io'],
+   
         pathname: '/images/s5zezdma/production/*',
       },
     ],
