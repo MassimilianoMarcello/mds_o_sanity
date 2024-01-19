@@ -31,6 +31,7 @@ export const Container = styled.section`
   .text-container-1{
     grid-column: 1/2;
   grid-row: 1/2;
+ 
   }
 
   }
@@ -46,7 +47,7 @@ export const ImageContainer = styled.div`
   }
   .rectangle-0 {
     grid-column: 1/3;
-    grid-row: 1/2;
+    grid-row: 3/5;
     background-color:blue;
     height: 30%;
     width: 40%;
@@ -68,10 +69,7 @@ margin-right: -1rem;
   @media only screen and (min-width: 800px) {
     grid-column: 1/4;
   grid-row: 1/5;
-  .images {
-   
-    /* padding-left:7rem; */
-  }
+
   }
   .rectangle-1 {
     height: 40%;
@@ -122,6 +120,9 @@ export const TextContainer = styled.div`
   @media only screen and (min-width: 600px) {
     grid-column: 4/5;
   grid-row: 1/2;
+  margin-top: 23rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
 }
 `;
 
