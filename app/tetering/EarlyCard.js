@@ -6,10 +6,11 @@ import styled from 'styled-components';
 
 const EarlyCard = ({ early }) => (
   <MainContainer key={early._id} className='card-container'>
-    <div className='images-container'>
+    <ImagesContainer className='images-container'>
       <div className='hero-image'>
         {early.heroImage && (
           <Image
+          className='h-img'
             src={early.heroImage}
             alt={early.heroTitle}
             width={300}
@@ -22,6 +23,7 @@ const EarlyCard = ({ early }) => (
       <div className='decoration-image'>
         {early.decorationImage && (
           <Image
+          className='deco-img'
             src={early.decorationImage}
             alt={early.heroTitle}
             width={300}
@@ -31,11 +33,11 @@ const EarlyCard = ({ early }) => (
         )}
        
       </div>
-    </div>
-    <div className="text-container">
+    </ImagesContainer>
+    <TextContainer className="text-container">
           <p className="title-card">{early.title}</p>
           <p className="text-card">{early.infoParagraph}</p>
-        </div>
+        </TextContainer>
   </MainContainer>
 );
 
@@ -47,18 +49,56 @@ grid-template-columns: repeat(4,1fr);
 grid-template-rows: auto auto auto;
 
 .images-container{
-grid-column: 1/3;
+grid-column: 1/5;
 grid-row: 1/3;
 background-color:blu;
+padding: .1rem;
 
 }
 .text-container{
-  grid-column: 3/5;
-  grid-row: 1/3;
+  grid-column: 1/5;
+  grid-row: 2/4;
   background-color:red;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
 }
 .hero-image{
   background-color:violet;
 }
+@media only screen and (min-width: 1000px) {
+  .images-container{
+grid-column: 1/4;
+grid-row: 1/3;
+background-color:blu;
+padding: 2rem;
 
+}
+.text-container{
+  grid-column: 4/5;
+  grid-row: 1/3;
+  background-color:red;
+  display: flex;
+  flex-direction: column;
+justify-content: center;
+}
+.hero-image{
+  background-color:violet;
+}
+}
+`
+
+const ImagesContainer = styled.div`
+
+`
+
+const TextContainer = styled.div`
+.title-card{border-top: solid 3px #f5a700;
+    padding-top: 1.25rem;
+    color: #0741a4;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.2;
+    letter-spacing: 1px;}
+.text-card{}
 `
