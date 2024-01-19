@@ -81,6 +81,7 @@ padding: 2rem;
   display: flex;
   flex-direction: column;
 justify-content: center;
+margin-top: -25rem;
 }
 .hero-image{
   background-color:violet;

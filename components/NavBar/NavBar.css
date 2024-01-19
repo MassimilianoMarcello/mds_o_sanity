@@ -135,7 +135,7 @@ background-color: aqua;
   .nav-links {
     list-style-type: none;
     display: inline-block;
-    margin-right: 1rem;
+    margin-right: .1rem;
     margin-top: 0;
     padding: 0;
   }

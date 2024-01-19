@@ -27,18 +27,21 @@ export default function Leadership() {
         <Image
         src={drpesha}
         alt="heaad of the school"
-        width={220}
-        height={220}
+        fill
+        // width={220}
+        // height={220}
         />
       </div>
       <div className="decoration-image">
       <Image
         src={Blue}
         alt="heaad of the school"
+     
         width={160}
         height={160}
         />
       </div>
+      
     
     </ImageContainer>
     <Bio className="staff-bio">
@@ -58,18 +61,31 @@ Dr. Kletenik received her Doctorate in Education from the Learning and Teaching 
 const MainContainer = styled.div`
 display: grid;
 grid-template-columns: repeat(4,1fr);
-grid-template-rows: auto auto ;
-margin-top:4rem;
+grid-template-rows: auto auto auto auto ;
+margin-top:6rem;
+ 
 `
 const ImageContainer = styled.div`
   position: relative;
-  grid-column:1/3;
+  grid-column:1/4;
   grid-row:1/2;
+  position: relative;
+
+  width: 220px;
+height: 220px;
+
 .main-image img{
   border-radius: 50%;
-  object-fit: cover;
-  padding-left: 1.5rem;
-  padding-bottom:1rem;
+  /* object-fit: cover; */
+  margin-left: 1.5rem;
+  margin-bottom:3rem;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+  width: 100%;
+    height: 100%;
+    z-index:100 ;
+
 
 }
 .decoration-image img{
@@ -77,18 +93,21 @@ const ImageContainer = styled.div`
   bottom: 0;
   left: 0;
   z-index: -1;
+  margin-right: 1rem;
+  margin-top:2rem;
+
 
 }
 `
 
 const TextContainer = styled.div`
-  grid-column:3/5;
+  grid-column:4/5;
   grid-row:1/2;
   padding-left:.1rem;
   margin-top: -8rem;
   padding-top:8rem;
   padding-bottom: 5rem;
-  margin-left:-1rem;
+  margin-left:3rem;
 height: 6rem;
 width: 16rem;
   border-bottom: solid 2px #f5a800;
