@@ -9,6 +9,7 @@ export const Container = styled.section`
   align-items: center;
   position: relative;
   padding: 0.3rem;
+  margin-top: 3rem;
   .image-container-1{
     grid-column: 1/2;
   grid-row: 1/2;
@@ -120,7 +121,7 @@ export const TextContainer = styled.div`
   @media only screen and (min-width: 600px) {
     grid-column: 4/5;
   grid-row: 1/2;
-  margin-top: 23rem;
+  margin-top: 13rem;
   margin-right: 2rem;
   margin-left: 2rem;
 }
