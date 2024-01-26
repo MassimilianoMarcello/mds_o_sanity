@@ -51,14 +51,16 @@ const SectionOne = () => {
 };
 export default SectionOne;
 
+
+
 const Parallax = styled.section`
-  font-family: var(--euclid-flex);
+  font-family: ${({ theme }) => theme.fontFamily.euclidFlex};
   background: url("/assets/fire_background.svg") fixed no-repeat;
 
-  margin-top: 1rem;
+  margin-top:${({ theme }) => theme.layout.spacingMedium};
   background-position: left;
   background-size: 95% 50% 45% 35%;
-  padding-bottom: 1rem;
+  padding-bottom: ${({ theme }) => theme.layout.spacingMedium};
   @media only screen and (min-width: 1170px) {
   }
 `;
@@ -66,32 +68,32 @@ const ParallaxInner = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, auto);
-  gap: 1rem;
+  gap: ${({ theme }) => theme.layout.spacingMedium};
   align-items: center;
-  padding: 1rem;
+  padding: ${({ theme }) => theme.layout.spacingMedium};
   h1 {
     grid-column: 1 / 4;
     grid-row: 1 / 2;
-    font-size: 2rem;
-    color: #f5a700;
-    font-weight: 500;
+    font-size: ${({ theme }) => theme.fontSize.heading1};
+    color: ${({ theme }) => theme.colors.gold};
+    font-weight: ${({ theme }) => theme.fontWeight.regular};
     line-height: 1.2;
   }
   p {
     grid-column: 1 / 4;
     grid-row: 2/3;
     color: #fff;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: ${({ theme }) => theme.fontSize.medium};
+    font-weight: ${({ theme }) => theme.fontWeight.regular};
     line-height: 2;
-    margin-top: -1rem;
+    margin-top: -${({ theme }) => theme.layout.spacingMedium};
   }
   h2 {
     grid-column: 1 / 3;
     grid-row: 3/4;
-    color: #f5a700;
-    font-size: 1.2rem;
-    font-weight: 400;
+    color: ${({ theme }) => theme.colors.gold};
+    font-size: ${({ theme }) => theme.fontSize.medium};
+    font-weight: ${({ theme }) => theme.fontWeight.regular};
   }
   @media only screen and (min-width: 800px) {
     h1 {

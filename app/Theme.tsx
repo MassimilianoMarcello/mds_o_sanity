@@ -28,9 +28,9 @@ const theme = {
 
   fontSize: {
     small: "0.75rem",
-    medium: "1rem",
+    medium: "1.2rem",
     large: "1.5rem",
-    heading1: "2rem",
+    heading1: "2.2rem",
     heading2: "1.5rem",
     paragraph: "1rem",
   },
