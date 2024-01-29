@@ -55,6 +55,7 @@ grid-row: 1/3;
 background-color:blu;
 padding: .1rem;
 position: relative;
+margin-bottom:20rem;
 
 }
 .text-container{
@@ -75,12 +76,13 @@ justify-content: center;
   left: 0;
   z-index: -10;
   margin-left:-1rem;
+  margin-bottom: -1rem;
 }
 @media only screen and (min-width: 1000px) {
   .images-container{
 grid-column: 1/4;
 grid-row: 1/3;
-
+margin-bottom:5rem;
 padding: 2rem;
 
 }
