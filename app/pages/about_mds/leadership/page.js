@@ -5,7 +5,7 @@ import Image from 'next/image';
 import drpesha from '@/public/assets/drpesha.jpg';
 import Blue from '@/public/assets/Blue.png';
 import styled from "styled-components";
-import StaffCard from "@/app/staff/serves";
+import StaffCard from "../../../(from_sanity)/staff/serves";
 
 export default function Leadership() {
   return (

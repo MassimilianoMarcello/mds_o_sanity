@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/tetering/EarlyCard.js"
-, "app/tetering/serve.js", "app/staff/serves.js", "app/Theme.tsx", "app/styled-global.tsx"  ],
+    "app/(from_sanity)/early/EarlyCard.js"
+, "app/(from_sanity)/early/serve.js", "app/(from_sanity)/staff/serves.js", "app/Theme.tsx", "app/styled-global.tsx"  ],
   "exclude": ["node_modules"]
 }
